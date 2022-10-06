@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import File from './file'
+import Onboarding from './components/Onboarding';
 
 export default function App() {
   return (
     <View style={styles.container}>
-    <File/>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+      <Onboarding/>
     </View>
   );
 }
