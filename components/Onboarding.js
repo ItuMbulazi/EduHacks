@@ -1,15 +1,43 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
-import backgroundImage from './images/backgroundImage.jpg'
+import { StyleSheet, Text, View, ImageBackground, Image } from 'react-native';
+import { ScrollView } from 'react-native-web';
+import backgroundImage from './images/backgroundImage.png'
 
-function Onboarding() {
-  return (
-    <View style={{width:1000,height:1000}}>
-      
-      <ImageBackground style={{width:1000,height:1000}} source={require('./images/backgroundImage.jpg')}></ImageBackground>
-    </View>
+import firstlogo from './images/firstlogo.png'
+
+import Onboarding from 'react-native-onboarding-swiper';
+
+const OnboardingScreen = ({navigation}) => {
+  return(
+    <ImageBackground style={{flex: 1, width: 390, height: 800}} source={require('./images/backgroundImage.png')}>
+    <Onboarding
+
+    pages={[
+      {
+        image: <Image source={require('./images/firstlogo.png')} />,
+        image: <Image source={require('./images/secondlogo.png')} />,
+      },
+      {
+        image: <Image source={require('./images/firstlogo.png')} />,
+        image: <Image source={require('./images/secondlogo.png')} />,
+        title: 'Are you struggling with Maths, Maths Lit, Physics and Accounting',
+      },
+      {
+        image: <Image source={require('./images/firstlogo.png')} />,
+        image: <Image source={require('./images/secondlogo.png')} />,
+        title: 'WITH THE EduHacks APP, NOW STUDENTS CAN ACCESS EDUCATIONAL  HACKS ONLINE AT THEIR COMFORT',
+      },
+    ]}
+  />
+  </ImageBackground>
   )
 }
 
-export default Onboarding
+export default OnboardingScreen
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  }
+})
