@@ -5,8 +5,9 @@ import backgroundImage from './images/backgroundImage.jpg'
 
 function Onboarding() {
   return (
-    <View>
-      <ImageBackground source={'backgroungImage.jpg'}></ImageBackground>
+    <View style={{width:1000,height:1000}}>
+      
+      <ImageBackground style={{width:1000,height:1000}} source={require('./images/backgroundImage.jpg')}></ImageBackground>
     </View>
   )
 }
