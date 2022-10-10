@@ -10,7 +10,7 @@ import logo from './images/logo.png'
   return(
    
 
-      <ImageBackground style={{flex: 1, width: 390, height: 800}} source={require('./images/backgroundImage.jpg')}>
+      <ImageBackground style={{flex: 1, width: 390, height: 800}} source={require('./images/backgroundImage.png')}>
         <View>
 
         <Image source={logo} style={{width:'370px', height:'200px' }}/>

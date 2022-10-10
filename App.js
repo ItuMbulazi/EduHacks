@@ -1,13 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import OnboardingScreen from './components/Onboarding';
+
+import Login from './components/login'
+import Packages from './components/packages'
+import Profile from './components/profileSingleAndGroup'
 
 export default function App() {
   return (
     <View style={styles.container}>
-     
-      <OnboardingScreen/>
+  <Profile/>
     </View>
   );
 }
