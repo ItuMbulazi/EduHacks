@@ -30,26 +30,18 @@ export default function App() {
   return (
     <View style={styles.container}>
 
- <NavigationContainer>
-      <Stack.Navigator>
-       <Stack.Screen name="all" component={All} />
-        <Stack.Screen name="home" component={Home} /> 
-        <Stack.Screen name="footer" component={Footer} />
-           
-       <Stack.Screen name="login" component={Login} />
-          <Stack.Screen name="signup" component={SignUp} />
-           <Stack.Screen name="packages" component={Packages} />
-           
-             
-          
-          
-          
+      <NavigationContainer>
+        <Stack.Navigator>
+          {/* <Stack.Screen name="all" component={All} /> */}
+          <Stack.Screen name="home" component={Home} />
+          <Stack.Screen name="footer" component={Footer} />
 
-          
-        
-      
-      </Stack.Navigator>
-    </NavigationContainer>
+          <Stack.Screen name="login" component={Login} />
+          <Stack.Screen name="signup" component={SignUp} />
+          <Stack.Screen name="packages" component={Packages} />n
+
+        </Stack.Navigator>
+      </NavigationContainer>
     </View>
   );
 }
@@ -57,12 +49,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-     backgroundColor: '#fff',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    
-  },
-  
-  
+
+  }
+
+
 
 });

@@ -14,7 +14,7 @@ import {
   import reminder from './images/reminders.png'
   import user from './images/user.png'
   
-  import { Box } from '@shopify/react-native-skia';
+  // import { Box } from '@shopify/react-native-skia';
   import { Title } from 'react-native-paper';
   
   
