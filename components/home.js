@@ -6,10 +6,7 @@ import {
     ImageBackground,
     StyleSheet,
   } from 'react-native';
-  import classroom from './images/classroom.jpg'
-  import background from './images/background.png';
-  import logo1 from './images/logo1.png';
-  import searchicons from './images/searchicons.png';
+  import secondlogo from './images/secondlogo.png';
   import search from './images/search.png';
   import reminder from './images/reminders.png'
   import user from './images/user.png'
@@ -36,7 +33,7 @@ import {
       <ImageBackground source={background} style={{ width: 320 }}>
         <Box style={styles.navbar}>
           <View style={styles.mainView}>
-            <Image source={logo1} style={styles.Heading} />
+            <Image source={secondlogo} style={styles.Heading} />
           </View>
           <View>
              <Image source={reminder} style={{ width: 20, height: 20,  marginLeft:10, marginTop:30 }} />
